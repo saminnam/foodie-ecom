@@ -105,7 +105,6 @@ const Header = ({ showMenuList, setShowMenuList }) => {
             <button
               className="px-5 max-w-max border mt-2 py-2 rounded uppercase"
               onClick={() => {
-                setShowLogin(true);
                 toggleMobileMenu();
               }}
             >

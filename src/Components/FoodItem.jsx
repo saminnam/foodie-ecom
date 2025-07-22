@@ -6,7 +6,7 @@ import { LuCircleMinus } from "react-icons/lu";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoIosStar } from "react-icons/io";
 
-const FoodItem = ({ id, name, price, desc, image }) => {
+const FoodItem = ({ id, name, price, image }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
   return (
     <section>
