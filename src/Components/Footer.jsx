@@ -1,6 +1,7 @@
 import React from "react";
 import { FaXTwitter, FaLinkedin, FaFacebook, FaInstagram, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { Assets } from "../assets/Assets";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <img
           className="h-16 sm:mx-auto"
-          src="../assets/logo.jpg"
+          src={Assets.logo}
           alt="Company name"
         />
         <nav

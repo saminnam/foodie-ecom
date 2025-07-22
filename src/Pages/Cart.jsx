@@ -11,7 +11,7 @@ const Cart = () => {
   return (
     <div className="my-16 py-3 px-7">
       <div>
-        <div className="grid border-gray-200 pb-2 border-b-2 text-[14px] font-semibold grid-cols-6 text-gray-800 items-center">
+        <div className="grid border-gray-200 pb-2 border-b-2 text-[12px] sm:text-[14px] font-semibold grid-cols-6 text-gray-800 items-center">
           {/* <p>No:</p> */}
           <p>Items</p>
           <p>Title</p>
@@ -24,7 +24,7 @@ const Cart = () => {
           .filter((item) => cartItems[item._id] > 0)
           .map((item, index) => (
             <div key={index} className="border-b-2 border-gray-200">
-              <div className="grid grid-cols-6 text-gray-600 text-[15px] font-medium items-center my-10 rounded">
+              <div className="grid grid-cols-6 text-gray-600 text-[13px] ms:text-[15px] font-medium items-center my-10 rounded">
                 {/* <p>{cartItems.length()}</p> */}
                 <img src={item.image} alt="" className="w-[70px] h-[70px] rounded"/>
                 <p>{item.name}</p>
