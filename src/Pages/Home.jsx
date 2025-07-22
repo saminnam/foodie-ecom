@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import ExploreMenu from "../components/ExploreMenu";
-import FoodDisplay from "../components/FoodDisplay";
-import HeroSection from "../components/HeroSection";
+import React from "react";
+import ExploreMenu from "../Components/ExploreMenu.jsx";
+import FoodDisplay from "../Components/FoodDisplay";
+import HeroSection from "../Components/HeroSection";
 
-const Home = () => {
-  const [category, setCategory] = useState("All");
+const Home = ({category, setCategory }) => {
+  
   return (
     <div>
       <HeroSection />

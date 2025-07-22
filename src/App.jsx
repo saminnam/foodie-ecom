@@ -14,13 +14,17 @@ import PlaceOrder from "./Pages/PlaceOrder";
 
 function App() {
   const [showMenuList, setShowMenuList] = useState(false);
+  const [category, setCategory] = useState("All");
   // const [showLogin, setShowLogin] = useState(false);
   return (
     <>
       {/* {showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>} */}
       <Header showMenuList={showMenuList} setShowMenuList={setShowMenuList} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home category={category} setCategory={setCategory} />}
+        />
         <Route path="/cart" element={<Cart />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/order" element={<PlaceOrder />} />
@@ -30,6 +34,8 @@ function App() {
         <FoodMenu
           showMenuList={showMenuList}
           setShowMenuList={setShowMenuList}
+          category={category}
+          setCategory={setCategory}
         />
       )}
       <Footer />
