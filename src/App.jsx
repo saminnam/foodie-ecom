@@ -10,6 +10,7 @@ import Orders from "./Pages/Orders";
 import Contact from "./Pages/Contact";
 import { useState } from "react";
 import FoodMenu from "./ModalPopup/FoodMenu";
+import PlaceOrder from "./Pages/PlaceOrder";
 
 function App() {
   const [showMenuList, setShowMenuList] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/order" element={<PlaceOrder />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {showMenuList && (
