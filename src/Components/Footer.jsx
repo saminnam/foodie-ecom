@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <img
           className="h-16 sm:mx-auto"
-          src="src/assets/logo.jpg"
+          src="../assets/logo.jpg"
           alt="Company name"
         />
         <nav
