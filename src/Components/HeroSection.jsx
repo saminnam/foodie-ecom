@@ -16,7 +16,7 @@ const HeroSection = ({ showMenuList, setShowMenuList }) => {
                 expertise. Our mission is to satisfy your cravings and elevate
                 your dining experience, one delicious meal at a time.
               </p>
-              <button className="text-white font-semibold text-sm sm:text-base lg:text-lg mt-3 sm:mt-5 border px-4 sm:px-5 py-2 sm:py-3 uppercase rounded-full cursor-pointer" onClick={() => setShowMenuList(true)}>
+              <button onClick={() => setShowMenuList(true)} className="text-white font-semibold text-sm sm:text-base lg:text-lg mt-3 sm:mt-5 border px-4 sm:px-5 py-2 sm:py-3 uppercase rounded-full cursor-pointer">
                 View Menu
               </button>
             </div>
