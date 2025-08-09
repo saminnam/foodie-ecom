@@ -4,12 +4,12 @@ import { menu_list } from "../assets/Assets";
 // Declares a functional component named ExploreMenu that takes two props
 const ExploreMenu = ({ category, setCategory }) => {
   return (
-    <div className="lg:px-10 px-5 py-10" id="explore_menu">
+    <div className="lg:px-10 px-5 py-10 md:block hidden" id="explore_menu">
       <div className="container mx-auto">
-        <h1 className="text-[#464546] text-5xl font-semibold">
+        <h2 className="text-[#464546] text-2xl md:text-5xl font-semibold">
           Explore Our Menu
-        </h1>
-        <p className="text-lg tracking-wide font-medium mt-5">
+        </h2>
+        <p className="text-sm md:text-lg tracking-wide font-medium mt-5">
           Experience the joy of dining from the comfort of your home with our
           fast and reliable delivery service. At Foodie Delight, we pride
           ourselves on offering fresh ingredients, delectable flavors, and
@@ -40,7 +40,7 @@ const ExploreMenu = ({ category, setCategory }) => {
           })}
         </div>
         {/* for mobile screen */}
-        <div className="mt-16 lg:hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-y-5">
+        {/* <div className="mt-16 lg:hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-y-5">
           {menu_list.map((item, index) => {
             return (
               <div
@@ -65,7 +65,7 @@ const ExploreMenu = ({ category, setCategory }) => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

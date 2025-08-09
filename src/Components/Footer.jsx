@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-[#F54A00] py-12 sm:pt-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <img
-          className="h-16 sm:mx-auto"
+          className="h-16 sm:mx-auto invert brightness-0"
           src={Assets.logo}
           alt="Company name"
         />
